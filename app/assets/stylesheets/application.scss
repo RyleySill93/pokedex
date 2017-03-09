@@ -102,3 +102,136 @@ h3 {
   text-align: center;
   color: $black;
 }
+
+.pokedex {
+  display:flex;
+  padding:0;
+  height:100%;
+  background-color:white
+}
+
+.pokedex>ul {
+  padding:0 10px 0 0;
+  width:300px;
+  height:calc(100% - 20px);
+  overflow:scroll
+}
+
+.pokedex>ul>li a {
+  display:block
+}
+
+.pokedex>ul>li:active {
+  background-color:#d43316
+}
+
+.pokemon-index-item {
+  padding:5px 10px;
+  border-bottom:1px solid #747474;
+  cursor:pointer
+}
+
+.pokemon-index-item:hover {
+  background-color:#999999
+}
+
+.pokemon-index-item img {
+  width:20px;
+  margin:0 10px;
+  vertical-align:middle
+}
+
+.pokemon-index-item a {
+  text-decoration:none;
+  color:black
+}
+
+.pokemon-index-item a:active {
+  background-color:#d43316
+}
+
+.pokemon-index-item:first-of-type {
+  border-top:1px solid grey
+}
+
+.pokemon-detail {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex:1;
+  position:relative;
+  border-radius:20px;
+  border:6px solid black;
+  margin:10px 40px;
+  padding:20px;
+  overflow:scroll;
+  background-color:#999999
+}
+
+.pokemon-detail figure {
+  border:4px solid black;
+  border-radius:8px;
+  width:80%;
+  padding:20px;
+  max-height:400px;
+  background:red;
+  background:-webkit-linear-gradient(315deg, #d43316, #ff0);
+  background:-o-linear-gradient(315deg, #d43316, #ff0);
+  background:-moz-linear-gradient(315deg, #d43316, #ff0);
+  background:linear-gradient(315deg, #d43316, #ff0)
+}
+
+.pokemon-detail figure img {
+  width:100%;
+  max-height:380px
+}
+
+.pokemon-detail ul {
+  text-align:center
+}
+
+.pokemon-detail ul li {
+  font-size:20px;
+  padding:10px 0;
+  color:#161616
+}
+
+.pokemon-detail .error {
+  color:#d43316;
+  font-size:12px;
+  font-style:bold
+}
+
+.pokemon-form {
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  padding:20px;
+  background-color:white;
+  border-radius:10px;
+  overflow:scroll
+}
+
+.pokemon-form input, .pokemon-form select, .pokemon-form button {
+  margin:20px 0;
+  background:none;
+  border:0;
+  border-radius:0px;
+  -webkit-appearance:none;
+  font-size:16px;
+  border-bottom:1px solid #161616
+}
+
+.pokemon-form button {
+  background:#d43316;
+  color:white;
+  font-weight:bold;
+  padding:10px 0;
+  border:none;
+  cursor:pointer;
+  margin:0
+}
+
+.pokemon-form select {
+  cursor:pointer
+}
